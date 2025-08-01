@@ -1,0 +1,33 @@
+*** Settings ***
+Documentation  Talk about what this suite of tests does
+Resource  ../Resources/FrontOfficeApp.robot
+Resource  ../Resources/CommonWeb.robot
+#Test Setup  Begin Web Test
+#Test Teardown  End Web Test
+
+# robot -d results tests/Front_Office.robot
+
+*** Variables ***
+${BROWSER} =  edge
+${URL} =  https://automationplayground.com/front-office/
+
+*** Test Cases ***
+#Should be able to access "Team" page
+#    [Documentation]  This is test 1
+#    [Tags]  test1
+#    FrontOfficeApp.Go to Landing Page
+#    FrontOfficeApp.Go to "Team" Page
+
+Hello World
+    comment    ${BROWSER}
+    log to console    helloworld I have a fucking dream!!!!     no_newline=true    format=>30
+    set global variable         ${global_variable}    foo bar
+
+#"Team" page should match requirements
+#    [Documentation]  This is test 2
+#    [Tags]  test2
+#    FrontOfficeApp.Go to Landing Page
+#    FrontOfficeApp.Go to "Team" Page
+#    FrontOfficeApp.Validate "Team" Page
+#    log                ${global_variable}
+

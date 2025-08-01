@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.12.10 on win32)" generated="2025-07-05T21:41:50.002043" rpa="false" schemaversion="5">
+<suite id="s1" name="Front Office" source="C:\Users\jim96\Desktop\front-office-3\tests\Front_Office.robot">
+<test id="s1-t1" name="Hello World" line="21">
+<kw name="Comment" owner="BuiltIn">
+<arg>${BROWSER}</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" start="2025-07-05T21:41:50.134253" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>helloworld I have a fucking dream!!!!</arg>
+<arg>no_newline=true</arg>
+<arg>format=&gt;30</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-05T21:41:50.134253" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-07-05T21:41:50.135253" level="INFO">${global_variable} = foo bar</msg>
+<arg>${global_variable}</arg>
+<arg>foo bar</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-07-05T21:41:50.134253" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2025-07-05T21:41:50.133253" elapsed="0.002000"/>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" start="2025-07-05T21:41:50.003047" elapsed="0.132206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Front Office" id="s1" pass="1" fail="0" skip="0">Front Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
